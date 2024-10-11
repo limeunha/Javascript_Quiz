@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title></title>
-    <script>
-      // 숫자를 입력받습니다.
+   <head>
+      <title></title>
+      <script>
+         //숫자를 입력받아 달러에서 원화로 환율을 변환하는 코드.[1달러 = 1270원]
 
-      //달러와 원화를 구해 출력하세요.
-    </script>
-  </head>
-  <body></body>
+         // 숫자를 입력받습니다.
+         const rawInput = prompt('dollar단위의 금액를 입력해주세요.')
+         //const rawInput = Number(prompt('dollar단위의 금액를 입력해주세요.'))
+         const dollar = Number(rawInput)
+
+         //달러와 원화를 구해 출력하세요.
+
+         console.log(`달러 ${rawInput}$`)
+         console.log(`원화 ${rawInput * 1270}원`)
+      </script>
+   </head>
+   <body></body>
 </html>
