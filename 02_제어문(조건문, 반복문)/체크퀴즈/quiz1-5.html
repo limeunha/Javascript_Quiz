@@ -7,7 +7,18 @@
    </head>
    <body>
       <script>
+         // 3~5월 봄, 6~8월 여름, 9~11월 가을 12~2월 겨울
          const a = Number(prompt('월을 입력해주세요.', ''))
+
+         if (3 <= a && a <= 5) {
+            alert('봄입니다.')
+         } else if (6 <= a && a <= 8) {
+            alert('여름입니다.')
+         } else if (9 <= a && a <= 11) {
+            alert('가을입니다.')
+         } else {
+            alert('겨울입니다.')
+         }
       </script>
    </body>
 </html>
