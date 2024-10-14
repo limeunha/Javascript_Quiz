@@ -1,11 +1,25 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <script></script>
-</body>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+   </head>
+   <body>
+      <script>
+         const grade = prompt('학년 입력', 0)
+         const score = prompt('점수 입력', 0)
+         const msg = '에러입니다.'
+
+         if (0 <= score && score <= 100)
+            if (grade == 4 && score >= 70) {
+               msg = '합격입니다.'
+            } else if ((grade < 4 || grade > 4) && screen >= 60) {
+               msg = '합격입니다.'
+            } else {
+               msg = '불합격입니다.'
+            }
+         document.write(msg)
+      </script>
+   </body>
 </html>

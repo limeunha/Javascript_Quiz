@@ -1,11 +1,31 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <script></script>
-</body>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+   </head>
+   <body>
+      <script>
+         const subject = prompt('과목입력', '')
+         switch (subject) {
+            case '수학':
+               Code = '01'
+               break
+            case '영어':
+               Code = '02'
+               break
+            case '국어':
+               Code = '03'
+               break
+            case '국사':
+               Code = '04'
+               break
+            case '기타':
+               Code = '00'
+               break
+         }
+         document.write('과목코드: ' + code)
+      </script>
+   </body>
 </html>

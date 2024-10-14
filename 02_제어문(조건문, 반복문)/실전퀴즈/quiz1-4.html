@@ -1,11 +1,25 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <script></script>
-</body>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+   </head>
+   <body>
+      <script>
+         const num = prompt('신장입력', 0)
+         const msg = '놀이기구 이용 가능'
+         var answer
+
+         if (num < 150) {
+            answer = confirm('부모님이랑 같이 왔나요?')
+
+            if(answer){
+               msg = '좋은시간보내렴'
+            } else(answer){
+               msg = '어른 모시고 오렴'
+            }
+         }
+      </script>
+   </body>
 </html>
