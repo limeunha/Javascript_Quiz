@@ -7,12 +7,14 @@
    </head>
    <body>
       <script>
-         const num = prompt('숫자입력', 0)
-         const msg = '50미만 입니다.'
-         if (num >= 50) {
-            msg = '50이상입니다.'
+         const num = Number('숫자입력', 0)
+
+         if (num < 50) {
+          console.log('미만')
+         }esle{
+            console.log('이상')
          }
-         document.write(msg)
+         document.write(num)
       </script>
    </body>
 </html>

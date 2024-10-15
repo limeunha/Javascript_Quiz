@@ -7,13 +7,14 @@
    </head>
    <body>
       <script>
-         const num = prompt('숫자입력', 0)
-         const msg = '3의 배수가 아닙니다.'
+         const num = Number('숫자입력', 0)
 
          if (num % 3 == 0) {
-            msg = '3의 배수가 입니다.'
+            console.log('3의 배수 이다')
+         } else {
+            console.log('3의 배수 아니다')
          }
-         document.write('입력하신 정수는' + msg)
+         console.log(num)
       </script>
    </body>
 </html>

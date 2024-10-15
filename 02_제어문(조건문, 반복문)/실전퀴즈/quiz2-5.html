@@ -7,7 +7,8 @@
    </head>
    <body>
       <script>
-         const subject = prompt('과목입력', '')
+         var subject = prompt('과목입력', '')
+         var code
          switch (subject) {
             case '수학':
                Code = '01'
@@ -21,7 +22,7 @@
             case '국사':
                Code = '04'
                break
-            case '기타':
+            default:
                Code = '00'
                break
          }

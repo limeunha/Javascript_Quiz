@@ -6,6 +6,17 @@
       <title>Document</title>
    </head>
    <body>
-      <script></script>
+      <script>
+         const names = ['이', '김', '박', '김', '유', '정', '김']
+
+         const result = names.filter((name) => {
+            if (name.indexOf('김') === -1) {
+               return false
+            } else {
+               return true
+            }
+         })
+         console.log(`성에 김씨가 들어가는 사람 : ${result}`)
+      </script>
    </body>
 </html>

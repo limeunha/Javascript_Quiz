@@ -7,24 +7,26 @@
    </head>
    <body>
       <script>
-         let num1 = prompt('정수입력', 0)
-         let num2 = prompt('정수입력', 0)
-         let num3 = prompt('정수입력', 0)
-         let sum = Number(num1) + Number(num2) + Number(num3)
-         let avg = sum / 3
+         let num1 = Number(prompt('정수입력', 0))
+         let num2 = Number(prompt('정수입력', 0))
+         let num3 = Number(prompt('정수입력', 0))
+
+         var sum = num1 + num2 + num3 //합계
+         var avg = sum / 3 //평균
 
          let max = num1
          let min = num1
 
+         //최댓값
          if (max < num2) max = num2
          if (max < num3) max = num3
 
+         //최솟값
          if (min > num2) min = num2
          if (min > num3) min = num3
 
-         let msg = '최대값: ' + max + ', 최소값: ' + min + ', 합계: ' + sum + ', 평균: ' + avg
-
-         document.write(msg)
+         console.log(`최댓값 : ${max}`)
+         console.log(`최솟값 : ${min}`)
       </script>
    </body>
 </html>
