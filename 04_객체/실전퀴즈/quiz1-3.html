@@ -6,5 +6,12 @@
       <title>Document</title>
       <script></script>
    </head>
-   <body></body>
+   <body>
+      <script>
+         var today = new Date()
+
+         console.log(today)
+         document.write(`${today.getFullYear()}-${today.getMonth() + 1}-${today.getDate()} ${today.getHours()}:${today.getMinutes()}:${today.getSeconds()}`)
+      </script>
+   </body>
 </html>
