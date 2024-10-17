@@ -8,6 +8,15 @@
    <body>
       <script>
          const prices = [150, 50, 70, 200]
+
+         /* const result = prices.map((price) => {
+       if (price > 100) return price
+        else return '할인'
+         })*/
+
+         const result = prices.map((price) => (price >= 100 ? price : '할인'))
+
+         console.log(result)
       </script>
    </body>
 </html>

@@ -11,7 +11,10 @@
          const quantities = [10, 7, 5]
 
          let total = 0
-         prices.forEach((prices, index))
+         prices.forEach((prices, index) => {
+            total += price * quantities[index]
+         })
+         console.log(total)
       </script>
    </body>
 </html>
