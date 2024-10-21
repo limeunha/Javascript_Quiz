@@ -32,7 +32,17 @@
             },
          ]
 
-         const result = arr.filter((arr)=>{
+         const inputName = prompt('학생 이름 입력')
+
+         const result = arr
+            .filter((student) => {
+               return student.name == inputName
+            })
+            .map((student) => {
+               document.write(`${student.name},${student.grade},${student.email}`)
+            })
+
+         const result1 = arr.filter((arr) => {
             arr.name
          })
       </script>

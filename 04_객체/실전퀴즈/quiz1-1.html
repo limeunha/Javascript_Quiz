@@ -12,7 +12,8 @@
          if (isNaN(str)) {
             console.log('숫자가 아닙니다.')
          } else {
-            console.log('숫자 입니다.')
+            //toFixed 소수점 없애는
+            console.log(`숫자 : ${Number(str).toFixed(0)}`)
          }
       </script>
    </body>

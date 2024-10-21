@@ -33,6 +33,23 @@
                email: 'lsh@student.com',
             },
          ]
+         arr.forEach((student) => {
+            console.log(student.email)
+            const idx = student.email.indexOf('@')
+            console.log(idx)
+            const id = student.email.substring(0, idx)
+            console.log(id)
+         })
+
+         const result = student.map((student) => {
+            const idx = student.email.indexOf('@')
+            console.log(idx)
+            const id = student.email.substring(0, idx)
+            console.log(id)
+
+            return id
+         })
+         console, log(result)
 
          arr.forEach((arr) => {
             document.write(`<p>이메일 : ${arr.email}</p>`)
