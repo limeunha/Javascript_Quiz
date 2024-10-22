@@ -137,12 +137,12 @@
 
             card.innerHTML = `
             
-               <img src="https://via.placeholder.com/300x180" alt="경제 성장률 5년 만에 최고치 기록" />
+               <img src="https://via.placeholder.com/300x180" alt="${article.title}" />
                <div class="card-content">
-                  <h2>경제 성장률 5년 만에 최고치 기록</h2>
-                  <p class="meta">이정민 기자 | 2024-10-08</p>
-                  <p>올해 경제 성장률이 5년 만에 최고치를 기록했습니다. 전문가들은 코로나19 이후 경제 회복이 빠르게 진행된 것으로 분석하고 있습니다.</p>
-                  <a href="#">기사 읽기</a>
+                  <h2>${article.title}</h2>
+                  <p class="meta">${article.author} | ${article.date}</p>
+                  <p>${article.summary}</p>
+                  <a href="${article.link}">기사 읽기</a>
                </div>
          
              

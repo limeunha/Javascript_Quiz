@@ -36,6 +36,17 @@
                },
             ],
          }
+
+         const products = data.products
+
+         const result = products.map((product) => ({
+            productName: product.productName,
+            discounrPrice: product.price * 0.9, //10% 할인된 가격 만들기
+         }))
+
+         result.forEach((product) => {
+            console.log(`${product.productName}:${product.discounrPrice.toLocaleString('ko-KR')}원`)
+         })
       </script>
    </body>
 </html>

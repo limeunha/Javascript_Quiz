@@ -37,8 +37,12 @@
             ],
          }
          const products = data.products
-
-         const result = products.filter((product) => user.products.includes('true').map((product) => document.write(`<p>${productName}은${price}</p>`)))
+         const result = products.filter((products) => {
+            return products.inStock
+         })
+         result.forEach((products) => {
+            console.log(`${products.productName}:${products.price.toLocaleString('ko-KR')}원`)
+         })
       </script>
    </body>
 </html>
