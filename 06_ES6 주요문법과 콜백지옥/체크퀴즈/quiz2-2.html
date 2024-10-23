@@ -7,13 +7,25 @@
    </head>
    <body>
       <script>
+         // console.log('안녕하세요')
+
+         // setTimeout(() => {
+         //    console.log('저는')
+         // }, 1000)
+
+         // console.log('하니입니다.')
          console.log('안녕하세요')
 
-         setTimeout(() => {
-            console.log('저는')
-         }, 1000)
+         function asynFunc(callback) {
+            setTimeout(() => {
+               console.log('저는')
+               callback()
+            }, 1000)
+         }
 
-         console.log('하니입니다.')
+         asynFunc(() => {
+            console.log('하니입니다.')
+         })
       </script>
    </body>
 </html>

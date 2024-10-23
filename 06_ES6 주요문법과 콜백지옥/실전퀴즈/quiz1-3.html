@@ -21,6 +21,16 @@
          asynFunc().then((result) => {
             console.log(result)
          })
+
+         async function run() {
+            try {
+               const result = await asyncTask()
+               console.log(result)
+            } catch (error) {
+               console.error(error)
+            }
+         }
+         run()
       </script>
    </body>
 </html>
