@@ -7,7 +7,14 @@
    </head>
    <body>
       <script>
-         console.log(num)
+         try {
+            console.log(num)
+            //num변수를 선언하지 않았음
+         } catch (exception) {
+            console.log(exception)
+            console.log(exception.name)
+            console.log(exception.message)
+         }
       </script>
    </body>
 </html>

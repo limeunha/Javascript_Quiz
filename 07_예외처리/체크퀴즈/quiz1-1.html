@@ -7,8 +7,14 @@
    </head>
    <body>
       <script>
-         let str = null
-         console.log(str.length)
+         try {
+            let str = null
+            console.log(str.length)
+            // str 이 mull 이므로 length의 값을 가져올수없다
+         } catch (exception) {
+            console.log(exception)
+            alert('str값은 사용할 수 없습니다')
+         }
       </script>
    </body>
 </html>

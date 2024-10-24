@@ -9,8 +9,15 @@
       <script>
          let arr = []
          try {
+            //str변수가 선언되지 않았기 때문이다
             console.log(str.length)
-         } catch (exception) {}
+         } catch (exception) {
+            arr.push(1)
+            arr.push(2)
+            arr.push(3)
+         } finally {
+            console.log(arr)
+         }
       </script>
    </body>
 </html>
