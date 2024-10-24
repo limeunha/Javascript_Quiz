@@ -1,6 +1,6 @@
 const op1 = document.querySelector('#op1')
 const op2 = document.querySelector('#op2')
-const selectBox = document.querySelector('#opar')
+const selectBox = document.querySelector('#oper')
 const answer = document.querySelector('#answer')
 
 selectBox.addEventListener('change', (e) => {
@@ -18,3 +18,6 @@ selectBox.addEventListener('change', (e) => {
 
    answer.textContent = result
 })
+
+//에러 이유 : 오타. selectBox = null
+// selectBox = null 이므로 대상이 없어서 addEventListener가 적용 x

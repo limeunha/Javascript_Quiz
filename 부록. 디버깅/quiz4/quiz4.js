@@ -2,7 +2,7 @@ var ctx = document.getElementById('canvas').getContext('2d')
 var width = 1280
 var stepX = 10
 
-//var x = 1400
+// var x = 1400
 var y = 360
 offsetY = 360
 var colors = ['#16a085', '#1abc9c', '#2ecc71', '#27ae60', '#9b59b6', '#8e44ad', '#f1c40f', '#f39c12', '#1abc9c']
@@ -16,6 +16,7 @@ ctx.lineWidth = lineWidth
 var direction = 1
 
 setInterval(function () {
+   let x
    ctx.beginPath()
    ctx.moveTo(x, y)
 
@@ -50,3 +51,5 @@ setInterval(function () {
 
    ctx.lineWidth = lineWidth
 }, 1000 / 60)
+
+// 에러 이유 : x의 변수가 정의 x
